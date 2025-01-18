@@ -1,10 +1,3 @@
-/**
-* Template Name: AgriCulture
-* Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -660,7 +653,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -839,8 +832,10 @@ section,
 }
 
 .hero h2 {
+  color: rgb(255, 230, 0);
+  text-shadow: #ffffff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 70px;
   font-weight: 700;
   animation: fadeInDown 1s both;
 }
@@ -852,6 +847,8 @@ section,
 }
 
 .hero p {
+  font-size: 25px;
+  text-align: center;
   animation: fadeInDown 1s both 0.2s;
 }
 
@@ -1485,6 +1482,15 @@ section,
 .team .person .social a:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+.team .section-title h2 {
+  color: var(--accent-color);
+  font-size: 40px;
+}
+
+.team .section-title p {
+  font-size: 18px;
 }
 
 /*--------------------------------------------------------------
@@ -2267,4 +2273,26 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Adjust this for size */
+  height: 60px; /* Ensures uniform scaling */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
 }
