@@ -218,7 +218,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -1087,13 +1087,15 @@ section,
 }
 
 .services-2 .section-title h2 {
-  color: color-mix(in srgb, var(--contrast-color), transparent 50%);
+  /* color: color-mix(in srgb, var(--accent-color), transparent 50%); */
+  color: var(--accent-color);
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .services-2 .section-title p {
   color: var(--contrast-color);
+  font-size: 20px;
 }
 
 .services-2 .services-carousel-wrap {
@@ -1136,9 +1138,9 @@ section,
   left: 20px;
   right: 20px;
   transition: 0.3s all ease;
-  transform: translateY(100%);
-  opacity: 0;
-  visibility: hidden;
+  transform: translateY(-10%);
+  opacity: 1;
+  /* visibility: hidden; */
 }
 
 .services-2 .service-item .service-item-contents .service-item-category {
@@ -1222,6 +1224,18 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials {
+  border-bottom: 1px solid hsla(142, 56%, 41%, 0.498);
+  border-top: 1px solid hsla(142, 56%, 41%, 0.498);
+}
+
+.testimonials .testimonial {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: #c7f9da3c;
+}
+
 .testimonials .testimonial img {
   width: 100px;
   height: 100px;
@@ -1230,17 +1244,28 @@ section,
 }
 
 .testimonials .testimonial blockquote p {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--default-color);
-  font-weight: 500;
+  opacity: 0.7  ;
+  font-weight: 400;
 }
 
 .testimonials .testimonial .client-name {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--accent-color);
 }
 
+.testimonials .section-title h2 {
+  /* color: color-mix(in srgb, var(--accent-color), transparent 50%); */
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.testimonials .section-title p {
+  font-size: 20px;
+}
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
@@ -1315,6 +1340,16 @@ section,
 
 .recent-posts .post-item:hover .post-img img {
   transform: scale(1.1);
+}
+
+.recent-posts .section-title h2 {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.recent-posts .section-title p {
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
