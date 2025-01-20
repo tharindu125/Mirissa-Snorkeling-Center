@@ -961,6 +961,8 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  height: 300px;
+  box-sizing: border-box;
 }
 
 .services .content .service-item .number {
