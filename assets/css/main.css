@@ -1676,6 +1676,11 @@ section,
   overflow: hidden;
 }
 
+.blog-details .post-img img {
+  margin: 10px;
+  height: 400px;
+}
+
 .blog-details .title {
   color: var(--heading-color);
   font-size: 28px;
