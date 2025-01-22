@@ -843,6 +843,7 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -956,10 +957,14 @@ section,
 }
 
 .services .content .service-item {
+  margin: 10px;
   background-color: var(--surface-color);
   padding: 20px 30px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
+  border-radius: 15px ;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 0 3px rgba(1, 0, 0, 0.7);
   position: relative;
   height: 200px;
   box-sizing: border-box;
@@ -1007,6 +1012,7 @@ section,
 }
 
 .services .content .service-item .service-item-content p {
+  color: hsla(0, 0%, 0%, 0.517);
   font-size: 15px;
 }
 
@@ -2349,4 +2355,50 @@ section,
 
 .whatsapp-button img:hover {
   transform: scale(1.1); /* Slightly larger on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo img {
+    max-height: 22px;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  /* .about-3 h2, p, h5 {
+    text-align: center;
+  } */
+
+  .services-2 .content-title {
+    text-align: center;
+  }
+
+  .services-2 .section-title p {
+    text-align: center;
+  }
+
+  .container .sidebar {
+    order: 1; /* Sidebar still first */
+  }
+
+  .container .col-lg-8 {
+    order: 2; /* Blog content second */
+  }
+
+  .footer .footer-contact p {
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-left: 20px;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .footer .footer-about a {
+    justify-content: center;
+  }
 }
