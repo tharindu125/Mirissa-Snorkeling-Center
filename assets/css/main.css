@@ -970,6 +970,8 @@ section,
   box-sizing: border-box;
 }
 
+
+
 .services .content .service-item .number {
   position: absolute;
   right: 10px;
@@ -1052,9 +1054,23 @@ section,
 }
 
 .about .content {
-  background: var(--accent-color);
+  background:linear-gradient(45deg,rgb(19, 19, 190),rgb(5, 5, 153),#1b8542,#116530,#07451e);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
   color: var(--contrast-color);
   padding: 7rem 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .about .content .img-overlap {
