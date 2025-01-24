@@ -833,8 +833,8 @@ section,
 }
 
 .hero h2 {
-  color: rgb(255, 230, 0);
-  text-shadow: #ffffff;
+  color: rgb(255, 232, 25);
+  text-shadow: 4px 4px 8px #000000;
   margin-bottom: 30px;
   font-size: 70px;
   font-weight: 700;
